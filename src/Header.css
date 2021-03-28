@@ -54,6 +54,7 @@
 .header__nav {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex: 1;
     min-width: 450px;
 }
@@ -78,9 +79,4 @@
     display: flex;
     align-items: center;
     color: white;
-}
-
-.header__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
 }

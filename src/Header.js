@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import SearchIcon from "@material-ui/icons/Search"
+import { Badge } from '@material-ui/core'
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket"
 import { Link, useHistory } from 'react-router-dom'
 import { useStateValue } from './StateProvider'
@@ -51,9 +52,9 @@ function Header() {
                 </div>
                 <Link to='/checkout'>
                     <div className="header__optionBasket">
-                        <ShoppingBasketIcon />
-                        <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
-
+                        <Badge color="secondary" badgeContent={basket?.length}>
+                            <ShoppingBasketIcon />
+                        </Badge>
                     </div>
                 </Link>
                 
